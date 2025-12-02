@@ -37,24 +37,24 @@ export default function ContactPage() {
         ].map((person) => (
           <div
             key={person.email}
-            className="p-6 bg-white rounded-xl border shadow-sm hover:shadow-md transition"
+            className="p-4 bg-white rounded-xl border shadow-sm hover:shadow-md transition"
           >
-            <h3 className="font-semibold text-xl text-conferenceBlue mb-1">
+            <h3 className="font-semibold text-xl mb-1 flex">
               {person.name}
             </h3>
-            <p className="text-sm text-gray-600 mb-4">{person.role}</p>
+            <span className="text-sm text-gray-600 mb-2">{person.role}</span>
 
             <div className="space-y-1">
               <p>
                 <span className="font-medium">Email: </span>
-                <a href={`mailto:${person.email}`} className="text-conferenceBlue hover:underline">
+                <a href={`mailto:${person.email}`} className="hover:underline">
                   {person.email}
                 </a>
               </p>
 
               <p>
                 <span className="font-medium">Tel: </span>
-                <a href={`tel:${person.tel}`} className="text-conferenceBlue hover:underline">
+                <a href={`tel:${person.tel}`} className="hover:underline">
                   {person.tel}
                 </a>
               </p>

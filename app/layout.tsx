@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { generateMetadata } from "./lib/seo";
 
-export const metadata: Metadata = {
-  title: "Professor Opoola Legacy Conference 2026",
-  description: "One-Day International Conference in Honour of Prof. Timothy Oloyede Opoola",
-};
+export const metadata = generateMetadata({
+  title: "Home | Opooola Conference 2026",
+  url: "/",
+});
 
 export default function RootLayout({
   children,
