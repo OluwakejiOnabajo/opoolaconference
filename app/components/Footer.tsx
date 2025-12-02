@@ -8,7 +8,7 @@ export default function Footer() {
         <p className="text-blue-200 text-xs">
           University of Ilorin — Ilorin, Kwara State, Nigeria
         </p>
-        <p> Made with 💗 by{" "} <Link className="font-medium text-conferenceBlue underline" href="mailto:info.tekkspace@gmail.com?subject=Interested%20in%20Custom%20Software%20Development&body=Hi,%0D%0A%0D%0AI am interested in having a custom website or software built. Please let me know how we can collaborate.%0D%0A%0D%0AThank you!">TekkSpace Interactive</Link></p>
+        <p className="text-xs mt-1"> Made with 💗 by{" "} <Link className="font-medium text-conferenceBlue underline" href="mailto:info.tekkspace@gmail.com?subject=Interested%20in%20Custom%20Software%20Development&body=Hi,%0D%0A%0D%0AI am interested in having a custom website or software built. Please let me know how we can collaborate.%0D%0A%0D%0AThank you!">TekkSpace Interactive</Link></p>
       </div>
     </footer>
   );
