@@ -2,7 +2,7 @@ import Image from "next/image";
 
 interface SpeakerCardProps {
   name: string;
-  bio: string;
+  bio?: string;
   role: string;
   image?: string; // optional profile image
 }
