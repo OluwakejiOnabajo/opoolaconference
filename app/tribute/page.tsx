@@ -24,15 +24,16 @@ export default function TributePage() {
         <p>
         Please submit your tribute via the form below:
         </p>
-<div className="p-4">
+        <div className="bg-white p-2 md:p-4 h-full">
        <iframe
   src="https://forms.gle/EjayaJkCswYprrH38"
-  className="w-full h-screen border-0"
+  className="w-full h-[3000px] border-0"
 >
   Loading…
 </iframe>
 
       </div>
+
       </div>
     </Section>
   );

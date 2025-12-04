@@ -67,10 +67,10 @@ const Announcement = ({handleCloseAnnouncement}: Props) => {
 
       
                               {/* Footer button */}
-            <div className="mb-2 flex justify-end">
+            <div className="flex justify-end">
               <button
                 onClick={handleCloseAnnouncement}
-                className="px-6 py-2 bg-[#46021f] cursor-pointer text-white font-semibold rounded-lg shadow hover:bg-[#3b021d] transition"
+                className="px-4 py-1.5 bg-[#46021f] text-sm cursor-pointer text-white font-semibold rounded-md shadow hover:bg-[#3b021d] transition"
               >
                 Close
               </button>
