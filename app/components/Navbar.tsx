@@ -30,7 +30,7 @@ export default function Navbar() {
         scrolled ? "bg-white/95 shadow-sm" : "bg-transparent"
       }`}
     >
-      <nav className="container mx-auto flex items-center justify-between py-3 px-4 md:px-0 gap-3 items-start">
+      <nav className="container mx-auto flex justify-between py-3 px-4 md:px-0 gap-3 items-start">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-wrap">
           Professor Opoola Conference 2026
@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex gap-6 font-medium">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="hover:text-[#3b021d]">
+            <Link key={link.href} href={link.href} className="hover:text-[#3b021d] text-nowrap">
               {link.label}
             </Link>
           ))}

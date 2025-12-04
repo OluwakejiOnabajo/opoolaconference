@@ -1,11 +1,29 @@
+"use client";
+
 import AboutPage from "./components/About";
 import CallForPapersPage from "./components/CallForPapers";
 import ContactPage from "./components/Contact";
 import Hero from "./components/Hero";
 import SpeakersPage from "./components/Speakers";
 import ThemePage from "./components/Theme";
+import { useState } from "react";
+import Announcement from "./components/Announcement";
+import { Dialog } from "@/components/ui/dialog";
 
-export default function Home() {
+export default function Home() {  
+   // initialize state based on localStorage
+  const today = new Date().toDateString();
+  const lastSeen = typeof window !== "undefined"
+    ? localStorage.getItem("lastAnnouncementSeen")
+    : null;
+
+  const [showAnnouncement, setShowAnnouncement] = useState(lastSeen !== today);
+
+  const handleCloseAnnouncement = () => {
+    localStorage.setItem("lastAnnouncementSeen", today);
+    setShowAnnouncement(false);
+  };
+
   return (
     <>
       <div id="home">
@@ -28,7 +46,12 @@ export default function Home() {
       <ContactPage />
         </div>
 
-
+ {/* Announcement Modal */}
+                {showAnnouncement && (
+              <Dialog open={showAnnouncement} onOpenChange={handleCloseAnnouncement}>
+                  <Announcement handleCloseAnnouncement={handleCloseAnnouncement} />
+              </Dialog>
+                )}
     </>
   );
 }

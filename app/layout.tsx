@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import { generateMetadata } from "./lib/seo";
 
 export const metadata = generateMetadata({
-  title: "Home | Opooola Conference 2026",
+  title: "Home | Opoola Conference 2026",
   url: "/",
 });
 

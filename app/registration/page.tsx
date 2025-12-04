@@ -8,9 +8,9 @@ export default function RegistrationPage() {
         the organising committee.
       </p>
 
-      <div className="bg-white rounded-xl shadow-md border p-4">
+      <div className="bg-white p-2 md:p-4 h-screen">
        <iframe
-  src="YOUR_GOOGLE_FORM_EMBED_LINK_HERE"
+  src="https://forms.gle/ASpLQdvWFeqLkNuZ8"
   className="w-full h-[900px] border-0"
 >
   Loading…

@@ -1,6 +1,7 @@
 import Section from "../components/Section";
 import { FaRegCalendar, FaRegPaperPlane, FaListUl } from "react-icons/fa";
 import { GiPriceTag } from "react-icons/gi";
+import { MdPublishedWithChanges } from "react-icons/md";
 
 export default function CallForPapersPage() {
   return (
@@ -49,7 +50,9 @@ export default function CallForPapersPage() {
 
       {/* Deadlines */}
       <div className="bg-green-50 border border-green-100 p-6 rounded-xl mb-10">
-        <div className="flex items-center gap-2 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+          <div className="flex items-center gap-2 mb-4">
           <FaRegCalendar className="text-green-700 text-xl" />
           <h3 className="text-xl font-semibold text-green-700">
             Important Deadlines
@@ -66,43 +69,94 @@ export default function CallForPapersPage() {
             31 January 2026
           </li>
         </ul>
-      </div>
-      
-          {/* Registration Fees */}
-     <div className="bg-blue-50 border border-blue-100 p-6 rounded-xl mb-10">
-  <div className="flex items-center gap-2 mb-4">
-    <GiPriceTag className="text-[#3b021d] text-xl" />
+        </div>
+
+        <div>
+          <div className="flex items-center gap-2 mb-4">
+    <MdPublishedWithChanges className="text-[#3b021d] text-xl" />
     <h3 className="text-xl font-semibold text-[#3b021d]">
-      Registration Fees
+      Publication	Fee
     </h3>
   </div>
 
   <ul className="space-y-2 ml-2 text-gray-700">
     <li>
-      <strong className="text-[#3b021d]">Physical:</strong>{" "}
-      Faculty ₦15,000 | Student ₦10,000
+      <strong className="text-[#3b021d]">National Participants:</strong>{" "}
+      ₦25,000
     </li>
     <li>
-      <strong className="text-[#3b021d]">Virtual:</strong>{" "}
-      Faculty ₦10,000 | Student ₦5,000
+      <strong className="text-[#3b021d]">International Participants:</strong>{" "}
+      $20
     </li>
   </ul>
-</div>
-
-
-      {/* Submission Email */}
-      <p className="text-lg mb-6">
+        </div>
+        </div>
+        
+      <p className="text-lg mt-6 text-center">
         All submissions should be emailed to:{" "}
         <span className="font-semibold text-[#3b021d]">
           topoolaconference2026@gmail.com
-        </span>
+        </span> or WhatsApp: <a href="tel:08034772730" className="hover:underline">08034772730</a>, {" "}
+        <a href="tel:08055941695" className="hover:underline">08055941695</a>.
       </p>
 
-      {/* Publication Notice */}
-      <p className="text-gray-700">
+      <p className="text-gray-700 text-center mt-1">
         All accepted papers will undergo peer review and will be published in a 
         reputable academic journal.
       </p>
+      </div>
+      
+          {/* Conference Fees */}
+     <div className="bg-blue-50 border border-blue-100 p-6 rounded-xl mb-10">
+  <div className="flex items-center gap-2 mb-4">
+    <GiPriceTag className="text-[#3b021d] text-xl" />
+    <h3 className="text-xl font-semibold text-[#3b021d]">
+      Conference Fee
+    </h3>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div className="space-y-2 ml-2 text-gray-700">
+    <strong className="text-[#3b021d] mb-1">Virtual:</strong>
+    <ul className="space-y-1 ml-2">
+    <li>
+      <span className="text-[#3b021d] font-medium">Faculty:</span>{" "}
+      ₦10,000
+    </li>
+    <li>
+      <span className="text-[#3b021d] font-medium">Student:</span>{" "}
+      ₦5,000
+    </li>
+  </ul>
+  </div>
+  <div className="space-y-2 ml-2 text-gray-700">
+    <strong className="text-[#3b021d] mb-1">Physical:</strong>
+    <ul className="space-y-1 ml-2">
+    <li>
+      <span className="text-[#3b021d] font-medium">Faculty:</span>{" "}
+      ₦15,000
+    </li>
+    <li>
+      <span className="text-[#3b021d] font-medium">Student:</span>{" "}
+      ₦10,000
+    </li>
+  </ul>
+  </div>
+  <div className="space-y-2 ml-2 text-gray-700">
+    <strong className="text-[#3b021d] mb-1">International	Participants:</strong>
+    <ul className="space-y-1 ml-2">
+    <li>
+      <span className="text-[#3b021d] font-medium">Faculty:</span>{" "}
+      $30
+    </li>
+    <li>
+      <span className="text-[#3b021d] font-medium">Student:</span>{" "}
+      $10
+    </li>
+  </ul>
+  </div>
+</div>
+</div>
     </Section>
   );
 }

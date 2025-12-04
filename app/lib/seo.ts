@@ -12,7 +12,7 @@ interface SEOProps {
 
 export const generateMetadata = ({
   title,
-  description = "One-Day International Conference in Honour of Prof. Timothy Oloyede Opooola, bringing together scholars in pure and applied mathematics.",
+  description = "One-Day International Conference in Honour of Prof. Timothy Oloyede Opoola, bringing together scholars in pure and applied mathematics.",
   url = "/",
   image = DEFAULT_OG_IMAGE,
 }: SEOProps): Metadata => {
@@ -22,12 +22,12 @@ export const generateMetadata = ({
   return {
     title,
     description,
-    keywords: "Mathematics, Conference, Nigeria, Academic, Opooola, Applied Mathematics, Pure Mathematics",
+    keywords: "Mathematics, Conference, Nigeria, Academic, Opoola, Applied Mathematics, Pure Mathematics",
     openGraph: {
       title,
       description,
       url: pageUrl,
-      siteName: "Opooola Conference 2026",
+      siteName: "Opoola Conference 2026",
       images: [image],
       type: "website",
       locale: "en_NG",
