@@ -22,7 +22,7 @@ const Announcement = ({handleCloseAnnouncement}: Props) => {
           data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] 
           data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] 
           duration-300
-          rounded-lg overflow-y-auto md:max-h-[90vh] p-8 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-lg transition-colors"
+          rounded-lg overflow-y-auto max-h-[90vh] p-8 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-lg transition-colors"
     >
       <div className="flex flex-col justify-center text-center items-center text-[#46021f] dark:text-blue-300 mb-4">
         <MdAnnouncement size={40} />

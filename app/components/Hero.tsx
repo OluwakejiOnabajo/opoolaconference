@@ -7,11 +7,11 @@ export default function Hero() {
       <div className="container mx-auto py-28 text-white flex flex-col md:flex-row items-center md:items-start gap-10">
         {/* Left: Text */}
         <div className="flex-1 max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             One-Day International Conference in Honour of Professor Timothy Oloyede Opoola
           </h1>
 
-          <p className="text-lg text-[#3b021d] mb-6 font-medium">
+          <p className="text-lg text-[#3b021d] mb-8 font-medium">
             University Auditorium, University of Ilorin &middot; 24 February 2026
           </p>
 
