@@ -32,12 +32,12 @@ export default function Hero() {
         </div>
 
         {/* Right: Image */}
-        <div className="flex-1 hidden md:flex justify-end">
+        <div className="flex-1  md:flex justify-end">
           <Image
             src="/assets/prof-opoola.png" // make sure this is in public/assets/
             alt="Professor Timothy Oloyede Opoola"
-            width={400} // adjust size as needed
-            height={400}
+            width={300} // adjust size as needed
+            height={300}
             className="rounded-xl object-cover shadow-lg"
           />
         </div>

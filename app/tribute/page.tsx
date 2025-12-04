@@ -1,4 +1,5 @@
 import Section from "../components/Section";
+import { ArrowRight } from "lucide-react";
 
 export default function TributePage() {
   return (
@@ -22,7 +23,15 @@ export default function TributePage() {
         </p>
 
         <p>
-        Please submit your tribute via the form below:
+        Please submit your tribute via the form below: 
+        <a
+          href="https://forms.gle/EjayaJkCswYprrH38"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-3 inline-flex items-center gap-1 font-semibold transition"
+        >
+          Submit Tribute <ArrowRight size={18} />
+        </a>
         </p>
         <div className="bg-white p-2 md:p-4 h-full">
        <iframe

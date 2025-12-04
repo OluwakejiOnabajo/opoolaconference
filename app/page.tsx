@@ -9,6 +9,7 @@ import ThemePage from "./components/Theme";
 import { useState } from "react";
 import Announcement from "./components/Announcement";
 import { Dialog } from "@/components/ui/dialog";
+import TributePage from "./components/Tribute";
 
 export default function Home() {  
    // initialize state based on localStorage
@@ -44,6 +45,9 @@ export default function Home() {
         </div>
       <div id="contact">
       <ContactPage />
+        </div>
+        <div id="tribute">
+      <TributePage />
         </div>
 
  {/* Announcement Modal */}
