@@ -1,7 +1,7 @@
 import Section from "../components/Section";
 import { FaRegCalendar, FaRegPaperPlane, FaListUl } from "react-icons/fa";
 import { GiPriceTag } from "react-icons/gi";
-import { MdPublishedWithChanges } from "react-icons/md";
+import { MdAccountBalanceWallet, MdPublishedWithChanges } from "react-icons/md";
 
 export default function CallForPapersPage() {
   return (
@@ -92,7 +92,7 @@ export default function CallForPapersPage() {
         </div>
         </div>
         
-      <p className="text-lg mt-6 text-center">
+      <p className="my-6 text-center">
         All submissions should be emailed to:{" "}
         <span className="font-semibold text-[#3b021d]">
           topoolaconference2026@gmail.com
@@ -156,6 +156,21 @@ export default function CallForPapersPage() {
   </ul>
   </div>
 </div>
+</div>
+
+  <div className="bg-blue-50 border border-blue-100 p-6 rounded-xl mb-10">
+  <div className="flex items-center gap-2 mb-4">
+    <MdAccountBalanceWallet className="text-[#3b021d] text-xl" />
+    <h3 className="text-xl font-semibold text-[#3b021d]">
+      Account Details
+    </h3>
+  </div>
+
+  <div className="space-y-2 ml-2 text-gray-700">
+    <p><strong className="text-[#3b021d] mb-1">Account Name:</strong> Prof. Opoola Legacy Conference</p>
+    <p><strong className="text-[#3b021d] mb-1">Bank:</strong> UnilorinMfb</p>
+    <p><strong className="text-[#3b021d] mb-1">Account Number:</strong> 1100175404</p>
+  </div>
 </div>
     </Section>
   );

@@ -32,8 +32,8 @@ export default function Navbar() {
     >
       <nav className="container mx-auto flex justify-between py-3 px-4 md:px-0 gap-3 items-start">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-wrap">
-          Professor Opoola Conference 2026
+        <Link href="/" className="text-lg md:text-xl font-bold text-wrap">
+          Prof. Opoola Conference 2026
         </Link>
 
         {/* Desktop Links */}
