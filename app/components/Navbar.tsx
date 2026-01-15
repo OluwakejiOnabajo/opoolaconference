@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const links = [
@@ -18,11 +18,11 @@ export default function Navbar() {
   // const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  // useEffect(() => {
+    // const onScroll = () => setScrolled(window.scrollY > 10);
+    // window.addEventListener("scroll", onScroll);
+    // return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   return (
     <header    
