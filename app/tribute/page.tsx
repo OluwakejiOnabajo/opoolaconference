@@ -49,7 +49,7 @@ export default function TributePage() {
           )}
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSe1SeO4k8KEBnsLu5sBW4BHFwnbFG8lmG_LCatCZ_nUQ2wxNA/viewform?embedded=true"
-            className={`w-full border-0 transition-opacity duration-300 h-120 ${
+            className={`w-full border-0 transition-opacity duration-300 h-150 ${
               isLoading ? "hidden" : "block"
             }`}
             onLoad={() => setIsLoading(false)}
