@@ -11,7 +11,7 @@ export default function RegistrationPage() {
       <div className="bg-white p-2 md:p-4 h-full">
        <iframe
   src="https://forms.gle/ASpLQdvWFeqLkNuZ8"
-  className="w-full h-[3000px] border-0"
+  className="w-full h-750 border-0"
 >
   Loading…
 </iframe>

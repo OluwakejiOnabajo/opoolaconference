@@ -36,7 +36,7 @@ export default function TributePage() {
         <div className="bg-white p-2 md:p-4 h-full">
        <iframe
   src="https://forms.gle/EjayaJkCswYprrH38"
-  className="w-full h-[3000px] border-0"
+  className="w-full h-750 border-0"
 >
   Loading…
 </iframe>

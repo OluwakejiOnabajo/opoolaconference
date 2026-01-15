@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Section from "./Section";
 import { ArrowRight } from "lucide-react";
 
@@ -16,12 +16,20 @@ export default function Hero() {
     
           </div>
            <div className="text-center">
-              <Link
+            <a
+                      href="https://forms.gle/EjayaJkCswYprrH38"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-[#46021f] inline-flex gap-1 items-center text-base cursor-pointer text-white font-semibold rounded-md shadow hover:bg-[#3b021d] transition"
+                    >
+                      Leave a Tribute <ArrowRight size={18} />
+                    </a>
+              {/* <Link
                 href="/tribute"
                 className="px-4 py-2 bg-[#46021f] inline-flex gap-1 items-center text-base cursor-pointer text-white font-semibold rounded-md shadow hover:bg-[#3b021d] transition"
               >
                 Leave a Tribute <ArrowRight size={18} />
-              </Link>
+              </Link> */}
             </div>
          </div>
         </Section>
