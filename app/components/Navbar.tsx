@@ -15,7 +15,7 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -25,10 +25,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all ${
-        scrolled ? "bg-white/95 shadow-sm" : "bg-transparent"
-      }`}
+    <header    
+      className={`fixed top-0 inset-x-0 z-50 transition-all bg-white/95 shadow-sm`}
+      // className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-white/95 shadow-sm" : "bg-transparent"}`}
     >
       <nav className="container mx-auto flex justify-between py-3 px-4 md:px-0 gap-3 items-start">
         {/* Logo */}
