@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     siteName: conferenceTitle,
     images: [
       // TODO: Replace with your actual OG image
-      { url: "/assets/prof-opoola.png", width: 1200, height: 630 },
+      { url: "/public/assets/prof-opoola.png", width: 1200, height: 630 },
     ],
     locale: "en_US",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: conferenceTitle, description: conferenceDescription, images: ["/assets/prof-opoola.png"] }, // TODO: Replace with your actual Twitter image
+  twitter: { card: "summary_large_image", title: conferenceTitle, description: conferenceDescription, images: ["/public/assets/prof-opoola.png"] }, // TODO: Replace with your actual Twitter image
 };
 
 export default function RootLayout({
