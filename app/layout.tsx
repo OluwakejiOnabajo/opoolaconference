@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import type { Metadata } from "next";
 
-const conferenceTitle = "Opoola Conference 2026";
+const conferenceTitle = "Professor Opoola Conference 2026";
 const conferenceDescription = "Join us for the Professor Opoola Legacy Conference 2026, is a one-day international gathering honouring Professor Timothy Oloyede Opoola, to discuss the latest trends in technology and innovation.";
-const conferenceUrl = "https://opoolaconference.vercel.app/"; 
+const conferenceUrl = "https://opoolaconference.vercel.app"; 
 
 export const metadata: Metadata = {
   metadataBase: new URL(conferenceUrl),
@@ -20,13 +20,12 @@ export const metadata: Metadata = {
     url: conferenceUrl,
     siteName: conferenceTitle,
     images: [
-      // TODO: Replace with your actual OG image
-      { url: "/assets/prof-opoola.png", width: 1200, height: 630 },
+      { url: `${conferenceUrl}/assets/prof-opoola.png`, width: 1200, height: 630, alt: "Professor Timothy Oloyede Opoola" },
     ],
     locale: "en_US",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: conferenceTitle, description: conferenceDescription, images: ["/assets/prof-opoola.png"] }, // TODO: Replace with your actual Twitter image
+  twitter: { card: "summary_large_image", title: conferenceTitle, description: conferenceDescription, images: [`${conferenceUrl}/assets/prof-opoola.png`] },
 };
 
 export default function RootLayout({

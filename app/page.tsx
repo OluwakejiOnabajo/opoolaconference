@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Welcome to the Prof. Opoola Conference 2026. Join us for a celebration of technology, innovation, and community.",
+  description: "The official website for the one-day international conference in honour of Professor Timothy Oloyede Opoola, a distinguished scholar of Complex Analysis.",
   alternates: {
     canonical: '/',
   },
