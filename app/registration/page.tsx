@@ -1,4 +1,5 @@
 "use client";
+import { ArrowRight } from "lucide-react";
 import Section from "../components/Section";
 import { useState } from "react";
 
@@ -7,9 +8,19 @@ export default function RegistrationPage() {
   
   return (
     <Section title="Registration" eyebrow="Secure Your Place">
-      <p className="mb-4">
+      <p className="mb-2">
         Please complete the registration form below. For enquiries, kindly contact 
         the organising committee.
+      </p>
+      <p className="mb-4">
+        Form not loading? click here <a
+                      href="https://forms.gle/ASpLQdvWFeqLkNuZ8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mx-2 px-4 py-1.5 bg-[#46021f] inline-flex gap-1 items-center text-base cursor-pointer text-white font-semibold rounded-md shadow hover:bg-[#3b021d] transition"
+                    >
+                      Register <ArrowRight size={18} />
+                    </a>
       </p>
 
       <div className="bg-white py-2 md:p-4 h-full">

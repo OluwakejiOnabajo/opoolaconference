@@ -26,43 +26,43 @@ const Announcement = ({handleCloseAnnouncement}: Props) => {
     >
       <div className="flex flex-col justify-center text-center items-center text-[#46021f] dark:text-blue-300 mb-4">
         <MdAnnouncement size={40} />
-        <h2 className="text-2xl font-bold">Announcement</h2>
+        <h2 className="text-2xl font-bold">📣 Second Call for Submission</h2>
       </div>
 
         {/* Hidden title for accessibility */}
         <DialogTitle>
-          <VisuallyHidden>Announcement</VisuallyHidden>
+          <VisuallyHidden>Second Call for Submission</VisuallyHidden>
         </DialogTitle>
 
       <div className="text-sm text-gray-700 space-y-4 mb-3 leading-relaxed text-justify">
-        <p className="mb-3">
-        Good day, everyone.
-      </p>
+        <p>
+          The Organizing Committee of the One-day International Conference in Honour of Professor Timothy Oloyede Opoola hereby announces the second deadline for the submission of Abstracts and Full-length Manuscripts.
+        </p>
 
-      <p className="mb-3">
-        We hope this message finds you well.
-      </p>
+        <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+            <p className="font-semibold text-green-800 text-center">
+                New Submission Deadline: <span className="font-bold text-lg">7th February, 2026</span>
+            </p>
+        </div>
 
-      <p className="mb-3">
-        In honour of our <em>“one-in-a-millennium”</em> professor, 
-        <strong> Professor Timothy Oloyede Opoola</strong>, we, his mentees across the world, are writing a <strong> documentary</strong> of his legend to mark his retirement as lecturer. We are gathering videos of students&apos; experience with him from his students across all academic levels, from professors to undergraduates.</p>
-        <p className="mb-3"> Please do well to share with us your experience with him in a short video (not more than 30 seconds) and send it to the contact below.       
-      </p>
+        <p>
+          Authors are encouraged to submit their works on or before the stated deadline and strictly adhere to the Conference submission guidelines.
+        </p>
 
-      <p className="mb-3">
-        Introduce yourself, state the course (if you remember), experience and knowledge you gained from him...also,  state the reason why you think he is different from other lecturers.
-</p>
+        <p className="italic">
+          <strong>Note:</strong> Please submit evidence of payment of registration fee along with your abstract for acceptance.
+        </p>
 
-      <p className="mb-3">
-        Thank you for joining us to celebrate this <em>super lecturer</em>.
-      </p>
-
-      <p className="font-semibold">
-        His Mentees, <br />
-        Represented by: <br />
-        Abass Adesokan <br />
-        0813 404 3529
-      </p>
+        <div>
+            <h4 className="font-bold text-center mb-2 text-[#46021f]">Publication Opportunity</h4>
+            <p>
+            All papers whose abstracts are reviewed, accepted, and presented at the Conference will be subjected to rigorous peer review and published in one of the following journals:
+            </p>
+            <ul className="list-disc list-inside ml-4 mt-2 text-xs">
+                <li>International Journal of Mathematical Sciences and Optimization: Theory & Applications (IJMSO)</li>
+                <li>International Journal of Mathematical Analysis and Modelling</li>
+            </ul>
+        </div>
       </div>
 
       

@@ -1,7 +1,7 @@
 "use client";
 
 import Section from "../components/Section";
-// import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 export default function TributePage() {
@@ -27,17 +27,17 @@ export default function TributePage() {
           in scholarship, mentorship, and leadership.
         </p>
 
-        {/* <p>
+        <p>
         Form not loading? click here 
         <a
           href="https://forms.gle/EjayaJkCswYprrH38"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-3 px-3 py-2 bg-[#46021f] cursor-pointer text-white rounded-md shadow hover:bg-[#3b021d] inline-flex items-center gap-1 font-semibold transition"
+          className="mx-3 px-3 py-1.5 bg-[#46021f] cursor-pointer text-white rounded-md shadow hover:bg-[#3b021d] inline-flex items-center gap-1 font-semibold transition"
         >
           Submit Tribute <ArrowRight size={18} />
         </a>
-        </p> */}
+        </p>
         <div className="bg-white py-2 md:p-4 h-full">
           {isLoading && (
             <div className="w-full h-96 flex items-center justify-center bg-gray-100 rounded">

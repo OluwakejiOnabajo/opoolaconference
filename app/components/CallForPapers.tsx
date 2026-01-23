@@ -61,12 +61,8 @@ export default function CallForPapersPage() {
 
         <ul className="space-y-2 ml-2 text-gray-700">
           <li>
-            <strong className="text-green-700">Abstract Deadline:</strong>{" "}
-            16 January 2026
-          </li>
-          <li>
-            <strong className="text-green-700">Full Paper Deadline:</strong>{" "}
-            31 January 2026
+            <strong className="text-green-700">Abstract & Full Paper Deadline:</strong>{" "}
+            7th February, 2026
           </li>
         </ul>
         </div>
@@ -81,11 +77,11 @@ export default function CallForPapersPage() {
 
   <ul className="space-y-2 ml-2 text-gray-700">
     <li>
-      <strong className="text-[#3b021d]">National Participants:</strong>{" "}
+      <strong className="text-[#3b021d]">Nigerian authors:</strong>{" "}
       ₦25,000
     </li>
     <li>
-      <strong className="text-[#3b021d]">International Participants:</strong>{" "}
+      <strong className="text-[#3b021d]">Foreign authors:</strong>{" "}
       $20
     </li>
   </ul>
@@ -100,10 +96,20 @@ export default function CallForPapersPage() {
         <a href="tel:08055941695" className="hover:underline">08055941695</a>.
       </p>
 
-      <p className="text-gray-700 text-center mt-1">
-        All accepted papers will undergo peer review and will be published in a 
-        reputable academic journal.
-      </p>
+      <div className="text-gray-700 text-center mt-1 space-y-4">
+        <p>
+          All papers whose abstracts are reviewed, accepted, and presented at the Conference will be subjected to rigorous peer review and, upon successful review, published in any one of the following journals:
+        </p>
+        <ul className="text-left max-w-3xl mx-auto list-disc list-inside">
+            <li>
+                <a href="https://ijmso.unilag.edu.ng" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#3b021d] hover:underline">International Journal of Mathematical Sciences and Optimization: Theory & Applications (IJMSO)</a>
+            </li>
+            <li>
+                <a href="http://www.tnsmb.org" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#3b021d] hover:underline">International Journal of Mathematical Analysis and Modelling</a>
+            </li>
+        </ul>
+        <p>Authors are encouraged to submit their works on or before the stated deadline and strictly adhere to the Conference submission guidelines.</p>
+      </div>
       </div>
       
           {/* Conference Fees */}

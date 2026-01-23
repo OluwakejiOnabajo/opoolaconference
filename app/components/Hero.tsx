@@ -11,8 +11,11 @@ export default function Hero() {
             One-Day International Conference in Honour of Professor Timothy Oloyede Opoola
           </h1>
 
-          <p className="text-lg text-[#3b021d] mb-8 font-medium">
-            University Auditorium, University of Ilorin &middot; 24 February 2026
+          <p className="text-xl text-[#3b021d] mb-2 font-medium">
+            University Auditorium, University of Ilorin
+          </p>
+          <p className="text-2xl text-[#3b021d] mb-8 font-medium">
+            24 February 2026 &middot; 9:00 A.M
           </p>
 
           <div className="flex gap-4">
