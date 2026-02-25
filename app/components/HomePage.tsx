@@ -16,13 +16,13 @@ export default function HomePage() {
   const today = new Date().toDateString();
   const lastSeen =
     typeof window !== "undefined"
-      ? localStorage.getItem("lastAnnouncementSeen")
+      ? localStorage.getItem("lastAnnouncementSeen_v2")
       : null;
 
   const [showAnnouncement, setShowAnnouncement] = useState(lastSeen !== today);
 
   const handleCloseAnnouncement = () => {
-    localStorage.setItem("lastAnnouncementSeen", today);
+    localStorage.setItem("lastAnnouncementSeen_v2", today);
     setShowAnnouncement(false);
   };
 
